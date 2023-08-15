@@ -80,9 +80,7 @@ function fetchData() {
           const listaItems = document.createElement("div");
           listaItems.classList.add("list-item");
           listaItems.innerHTML = `
-            <strong>Name:</strong> ${item.name}<br>
-            <strong>URL:</strong> <a href="${item.url}" target="_blank">${item.url}</a>
-            <hr>
+            <strong>${item.name}<br>
           `;
           muestraContainer.appendChild(listaItems);
         });
