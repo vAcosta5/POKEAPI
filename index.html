@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PokeAPI</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="bg-dark p-2 d-flex justify-content-between gap-5">
+      <img
+        src="./public/images/International_Pokemon_logo.svg.webp"
+        alt=""
+        class="img-fluid mx-3"
+        width="200px"
+      />
+      <section class="input-group mx-3 w-25 d-flex align-content-center">
+        <select class="form-select" aria-label="Select Category">
+          <option selected>Choose...</option>
+          <option value="1">Pokemon</option>
+          <option value="2">Ability</option>
+          <option value="3">Region</option>
+        </select>
+        <button class="btn btn-secondary" type="button">Search</button>
+      </section>
+    </nav>
+    <div id="spinner-wrapper">
+      
+    </div>
+    <main class="p-3 mt-5">
+      <section class="container-muestra">
+        <h1 class="text-center mb-5">Pokemon</h1>
+        <div class="container-xl">
+          <div class="row gap-5">
+            <div class="card col">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/132.png"
+                alt="Ditto"
+              />
+              <hr />
+              <div class="card-body">
+                <h3 class="text-center">Ditto</h3>
+              </div>
+            </div>
+            <div class="card col">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/447.png"
+                alt="Riolu"
+              />
+              <hr />
+              <div class="card-body">
+                <h3 class="text-center">Riolu</h3>
+              </div>
+            </div>
+            <div class="card col">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
+                alt="Pikachu"
+              />
+              <hr />
+              <div class="card-body">
+                <h3 class="text-center">Pikachu</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-none">
+        <h1 class="text-center">Ability</h1>
+        <div class="container-xl">
+        </div>
+      </section>
+      <section class="d-none">
+        <h1 class="text-center">Region</h1>
+        <div class="container-xl">
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/api/init.js"></script>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
