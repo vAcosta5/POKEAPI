@@ -3,20 +3,18 @@
     border: 1px solid #dee2e6;
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 75px;
+    width: 30%;
 }
 
 .list-item strong {
     color: #343a40;
     text-transform: uppercase;
     border-top: 1px #dee2e6 solid;
-}
-
-.list-item a:hover {
-    text-decoration: underline;
+    width: 90%; 
+    margin-top: 10px;
 }
